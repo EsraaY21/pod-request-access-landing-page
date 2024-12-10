@@ -1,4 +1,22 @@
+import { useState } from "react";
+
 function App() {
+  const [email, setEmail] = useState("");
+  const [error, setError] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (!email) {
+      setError("Oops! Please add your email");
+    } else if (!/\S+@\S+\.\S+/.test(email)) {
+      setError("Oops! Please check your email");
+    } else {
+      setError("");
+      console.log("Email submitted:", email);
+    }
+  };
+
   return (
     <main>
       <img src="/assets/desktop/logo.svg" alt="Logo" className="logo" />
@@ -14,8 +32,16 @@ function App() {
           </p>
         </div>
 
-        <form className="cta" id="cta">
-          <input type="email" placeholder="Email address" />
+        {/* Form ********** */}
+        <form className="cta" id="cta" onSubmit={handleSubmit}>
+          <input
+            type="text"
+            placeholder="Email address"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className={error ? "error" : ""}
+          />
+          {error && <p className="error text-4">{error}</p>}
           <button type="submit" className="text-3" form="cta">
             Request access
           </button>

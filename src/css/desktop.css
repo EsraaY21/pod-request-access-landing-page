@@ -35,6 +35,11 @@ body,
     font-weight: 700;
 }
 
+.text-4 {
+    font-size: 12px;
+    font-weight: 700;
+}
+
 
 body {
     min-height: 100vh;
@@ -99,6 +104,8 @@ input {
     height: 52px;
     outline: none;
     color: white;
+    border: 1px solid var(--blue-900);
+    transition: all 0.3s ease;
 }
 
 input::placeholder {
@@ -126,7 +133,7 @@ button {
 
 
 button:hover {
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), rgb(84, 230, 175);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), var(--green);
     box-shadow: 0px 2px 4px 0px rgba(84, 230, 175, 0.14);
 }
 
@@ -146,4 +153,18 @@ button:hover {
     bottom: 0px;
     right: 0px;
     transform: translateY(50%);
+}
+
+input:focus {
+    border-color: var(--green);
+}
+
+input.error {
+    border-color: var(--red);
+}
+
+p.error {
+    color: var(--red);
+    margin-top: 8px;
+    padding-left: 24px;
 }
