@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --green: rgb(84, 230, 175);
+    --blue-950: rgb(18, 23, 37);
+    --blue-900: rgb(44, 52, 75);
+    --blue-600: rgb(90, 102, 138);
+    --blue-300: rgb(194, 203, 229);
+    --white: rgb(255, 255, 255);
+    --red: rgb(251, 60, 60);
+}
+
+body,
+* {
+    font-family: "Chivo", sans-serif;
+}
+
+.text-1 {
+    font-size: 48px;
+    line-height: 120%;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+
+.text-2 {
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 300;
+}
+
+.text-3 {
+    font-size: 14px;
+    line-height: 200%;
+    font-weight: 700;
+}
+
+
+body {
+    min-height: 100vh;
+    background: var(--blue-950);
+    padding-left: 160px;
+    padding-top: 135px;
+    padding-bottom: 135px;
+}
+
+main {
+    background: url('/assets/desktop/image-host.jpg');
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.logo {
+    margin-top: 18px;
+    margin-bottom: 104px;
+}
+
+.content {
+    padding-top: 88px;
+    padding-right: 88px;
+    background: var(--blue-950);
+    max-width: 736px;
+
+}
+
+h1 {
+    color: var(--green);
+    margin-bottom: 24px;
+}
+
+h1 span {
+    color: var(--white);
+}
+
+p {
+    color: var(--blue-300);
+    max-width: 40ch;
+    margin-bottom: 40px;
+}
+
+
+form {
+    position: relative;
+    width: 448px;
+    margin-bottom: 40px;
+
+}
+
+input {
+    background-color: var(--blue-900);
+    padding: 12px 24px;
+    width: 100%;
+    border: none;
+    border-radius: 999px;
+    height: 52px;
+    outline: none;
+    color: rgba(255, 255, 255, 50%);
+
+}
+
+button {
+    background-color: var(--green);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    border-radius: 28px;
+    color: var(--blue-950);
+    position: absolute;
+    width: 172px;
+    height: 44px;
+    border: none;
+    right: 4px;
+    top: 4px;
+    text-transform: capitalize;
+}
+
+.sponsors {
+    display: flex;
+    gap: 40px;
+}
+
+.sponsors img {
+    height: 28px;
+    width: auto;
+}

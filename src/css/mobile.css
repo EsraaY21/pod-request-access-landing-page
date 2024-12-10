@@ -1,0 +1,21 @@
+/* body {
+    min-height: 100vh;
+    background: url('/assets/mobile/image-host.jpg'), rgba(18, 23, 37, 85%);
+    background-blend-mode: overlay;
+    padding: 36px;
+}
+
+.logo {
+    padding-top: 110px;
+    margin-inline: auto;
+    margin-bottom: 56px;
+}
+
+h1 {
+    color: var(--green);
+    text-align: center;
+}
+
+h1 span {
+    color: var(--white);
+} */
