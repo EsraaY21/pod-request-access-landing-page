@@ -15,8 +15,13 @@ body,
     font-family: "Chivo", sans-serif;
 }
 
+body {
+    min-height: 100vh;
+
+}
+
 .text-1 {
-    font-size: 48px;
+    font-size: clamp(32px, 5vw, 48px);
     line-height: 120%;
     font-weight: 300;
     text-transform: uppercase;
@@ -24,7 +29,7 @@ body,
 
 
 .text-2 {
-    font-size: 18px;
+    font-size: clamp(14px, 3vw, 18px);
     line-height: 150%;
     font-weight: 300;
 }
@@ -42,11 +47,11 @@ body,
 
 
 body {
-    min-height: 100vh;
     background: var(--blue-950);
-    padding-left: 160px;
-    padding-top: 135px;
-    padding-bottom: 135px;
+    padding-left: 10.5vw;
+    padding-bottom: 8.8vw;
+    padding-top: 8.8vw;
+
 }
 
 main {
@@ -54,19 +59,29 @@ main {
     background-repeat: no-repeat;
     background-position: calc(100% + 66px) center;
     position: relative;
+
+
 }
 
+.logo_container {
+    width: 28vw;
+    padding-bottom: clamp(56px, 8vw, 104px);
+    background: var(--blue-950);
+}
+
+
 .logo {
-    margin-top: 18px;
-    margin-bottom: 104px;
+    height: 56px;
 }
 
 .content {
     padding-top: 88px;
-    padding-right: 88px;
+    padding-right: clamp(40px, 5vw, 88px);
     background: var(--blue-950);
-    max-width: 736px;
-
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 55vw;
 }
 
 h1 {
@@ -83,29 +98,22 @@ p {
     max-width: 40ch;
 }
 
-.content {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-
 form {
     position: relative;
-    width: 448px;
+    width: 100%;
+    max-width: 448px;
 }
 
 input {
     background-color: var(--blue-900);
     padding: 12px 24px;
-    width: 100%;
-    border: none;
     border-radius: 999px;
     height: 52px;
     outline: none;
     color: white;
     border: 2px solid var(--blue-900);
     transition: all 0.3s ease;
+    width: 100%;
 }
 
 input::placeholder {
@@ -120,7 +128,8 @@ button {
     border-radius: 28px;
     color: var(--blue-950);
     position: absolute;
-    width: 172px;
+    width: 40%;
+    max-width: 172px;
     height: 44px;
     border: none;
     right: 4px;
@@ -139,13 +148,11 @@ button:hover {
 
 
 .sponsors {
-    display: flex;
-    gap: 40px;
-}
-
-.sponsors img {
-    height: 28px;
-    width: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 .dots_pattern {

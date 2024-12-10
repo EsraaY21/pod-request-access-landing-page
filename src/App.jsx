@@ -19,7 +19,9 @@ function App() {
 
   return (
     <main>
-      <img src="/assets/desktop/logo.svg" alt="Logo" className="logo" />
+      <div className="logo_container">
+        <img src="/assets/desktop/logo.svg" alt="Logo" className="logo" />
+      </div>
       <div className="content">
         <div className="text_content">
           <h1 className="text-1">
@@ -42,10 +44,11 @@ function App() {
             onChange={(e) => setEmail(e.target.value)}
             className={error ? "error" : ""}
           />
-          {error && <p className="error text-4">{error}</p>}
           <button type="submit" className="text-3" form="cta">
             Request access
           </button>
+
+          {error && <p className="error text-4">{error}</p>}
         </form>
 
         <div className="sponsors">

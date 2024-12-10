@@ -1,0 +1,32 @@
+@media (max-width: 768px) {
+    body {
+        padding-left: 44px;
+        padding-top: 0px;
+    }
+
+    main {
+        background: url('/assets/tablet/image-host.jpg');
+        background-repeat: no-repeat;
+        background-position: calc(100% + 66px) center;
+        position: relative;
+    }
+
+    .logo_container {
+        padding-top: clamp(110px, 10vw, 156px);
+    }
+
+    .content {
+        width: fit-content;
+        min-width: 70vw;
+        max-width: 90vw;
+    }
+
+    h1 {
+        max-width: 40vw;
+    }
+
+    .dots_pattern {
+        display: none;
+    }
+
+}
