@@ -21,7 +21,7 @@ body {
 }
 
 .text-1 {
-    font-size: clamp(32px, 5vw, 48px);
+    font-size: clamp(2rem, 5vw, 3rem);
     line-height: 120%;
     font-weight: 300;
     text-transform: uppercase;
@@ -29,19 +29,19 @@ body {
 
 
 .text-2 {
-    font-size: clamp(14px, 3vw, 18px);
+    font-size: clamp(0.875rem, 3vw, 1.125rem);
     line-height: 150%;
     font-weight: 300;
 }
 
 .text-3 {
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 200%;
     font-weight: 700;
 }
 
 .text-4 {
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 700;
 }
 
@@ -57,7 +57,7 @@ body {
 main {
     background: url('/assets/desktop/image-host.jpg');
     background-repeat: no-repeat;
-    background-position: calc(100% + 66px) center;
+    background-position: calc(100% + 4.125rem)center;
     position: relative;
 
 
@@ -65,28 +65,28 @@ main {
 
 .logo_container {
     width: 28vw;
-    padding-bottom: clamp(56px, 8vw, 104px);
+    padding-bottom: clamp(3.5rem, 8vw, 6.5rem);
     background: var(--blue-950);
 }
 
 
 .logo {
-    height: 56px;
+    height: 3.5rem;
 }
 
 .content {
-    padding-top: 88px;
-    padding-right: clamp(40px, 5vw, 88px);
+    padding-top: 5.5rem;
+    padding-right: clamp(2.5rem, 5vw, 5.5rem);
     background: var(--blue-950);
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 2.5rem;
     max-width: 55vw;
 }
 
 h1 {
     color: var(--green);
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 }
 
 h1 span {
@@ -101,17 +101,17 @@ p {
 form {
     position: relative;
     width: 100%;
-    max-width: 448px;
+    max-width: 28rem;
 }
 
 input {
     background-color: var(--blue-900);
-    padding: 12px 24px;
+    padding: 0.75rem 1.5rem;
     border-radius: 999px;
-    height: 52px;
+    height: 3.25rem;
     outline: none;
     color: white;
-    border: 2px solid var(--blue-900);
+    border: 0.125rem solid var(--blue-900);
     transition: all 0.3s ease;
     width: 100%;
 }
@@ -122,18 +122,18 @@ input::placeholder {
 
 button {
     background-color: var(--green);
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     text-align: center;
-    border-radius: 28px;
+    border-radius: 1.75rem;
     color: var(--blue-950);
     position: absolute;
     width: 40%;
-    max-width: 172px;
-    height: 44px;
+    max-width: 10.75rem;
+    height: 2.75rem;
     border: none;
-    right: 4px;
-    top: 4px;
+    right: 0.25rem;
+    top: 0.25rem;
     text-transform: capitalize;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -172,6 +172,6 @@ input.error {
 
 p.error {
     color: var(--red);
-    margin-top: 8px;
-    padding-left: 24px;
+    margin-top: 0.5rem;
+    padding-left: 1.5rem;
 }

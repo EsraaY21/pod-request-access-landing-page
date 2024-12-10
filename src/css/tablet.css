@@ -1,18 +1,15 @@
 @media (max-width: 768px) {
     body {
-        padding-left: 44px;
+        padding-left: 2.75rem;
         padding-top: 0px;
     }
 
     main {
         background: url('/assets/tablet/image-host.jpg');
-        background-repeat: no-repeat;
-        background-position: calc(100% + 66px) center;
-        position: relative;
     }
 
     .logo_container {
-        padding-top: clamp(110px, 10vw, 156px);
+        padding-top: clamp(6.875rem, 10vw, 9.75rem);
     }
 
     .content {
