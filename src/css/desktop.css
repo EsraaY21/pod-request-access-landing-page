@@ -47,7 +47,8 @@ body {
 main {
     background: url('/assets/desktop/image-host.jpg');
     background-repeat: no-repeat;
-    background-position: center right;
+    background-position: calc(100% + 66px) center;
+    position: relative;
 }
 
 .logo {
@@ -75,15 +76,18 @@ h1 span {
 p {
     color: var(--blue-300);
     max-width: 40ch;
-    margin-bottom: 40px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 
 form {
     position: relative;
     width: 448px;
-    margin-bottom: 40px;
-
 }
 
 input {
@@ -122,4 +126,11 @@ button {
 .sponsors img {
     height: 28px;
     width: auto;
+}
+
+.dots_pattern {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    transform: translateY(50%);
 }
