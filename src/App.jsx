@@ -35,6 +35,7 @@ function App() {
         {/* Form ********** */}
         <form className="cta" id="cta" onSubmit={handleSubmit}>
           <input
+            name="email"
             type="text"
             placeholder="Email address"
             value={email}
